@@ -11,6 +11,7 @@ Welcome to the ezForge community! This repository hosts our public **GitHub Disc
 | **Show & Tell** | Share your MCP servers, integrations, and projects |
 | **Bug Reports** | Report bugs or unexpected behavior |
 | **Announcements** | Product updates and releases from the ezForge team |
+| **Off Topic** | Casual conversation not related to ezForge products |
 
 ## Guidelines
 
