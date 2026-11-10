@@ -7,6 +7,8 @@ body:
 
         **Security issue?** Do not post it here. Email `security@ezforge.ai` instead.
         **Never paste** API keys, tokens, passwords, or personal or customer data in this public forum.
+
+        Replies may come from Ember, ezForge's AI assistant. Our team reviews anything Ember cannot resolve.
   - type: dropdown
     id: product
     attributes:
@@ -21,11 +23,16 @@ body:
         - Other / not sure
     validations:
       required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Product, app, or MCP client version, if known.
   - type: textarea
-    id: summary
+    id: actual
     attributes:
       label: What happened?
-      description: A short description of the bug.
+      description: A short description of the bug and what you saw.
     validations:
       required: true
   - type: textarea
@@ -80,11 +87,16 @@ body:
       description: Paste relevant output. Remove any keys, tokens, or personal data first.
       render: text
   - type: checkboxes
-    id: checks
+    id: search
     attributes:
-      label: Before submitting
+      label: Duplicate check
       options:
         - label: I searched existing discussions and this bug has not been reported.
           required: true
-        - label: This post contains no secrets, credentials, or personal data.
+  - type: checkboxes
+    id: no-secrets
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed tokens, passwords, and personal data from this post.
           required: true

@@ -6,6 +6,9 @@ body:
         Thanks for the suggestion. Describing the problem you want solved helps us more than a specific solution.
 
         Upvote existing requests instead of opening duplicates. **Never paste** API keys, tokens, or personal data in this public forum.
+
+        Replies may come from Ember, ezForge's AI assistant. Our team reviews every request.
+        **Security issue?** Email `security@ezforge.ai` instead of posting here.
   - type: dropdown
     id: product
     attributes:
@@ -29,7 +32,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: solution
+    id: proposal
     attributes:
       label: Proposed solution
       description: How would you like it to work?
@@ -56,11 +59,16 @@ body:
       label: Additional context
       description: Screenshots, examples, or links to similar features elsewhere.
   - type: checkboxes
-    id: checks
+    id: search
     attributes:
-      label: Before submitting
+      label: Duplicate check
       options:
         - label: I searched existing discussions and this has not been requested.
           required: true
-        - label: This post contains no secrets, credentials, or personal data.
+  - type: checkboxes
+    id: no-secrets
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed tokens, passwords, and personal data from this post.
           required: true
